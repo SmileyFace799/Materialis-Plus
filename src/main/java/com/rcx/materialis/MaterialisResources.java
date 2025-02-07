@@ -152,6 +152,11 @@ public class MaterialisResources {
 	//redstone arsenal fluids
 	public static final FluidWithBlockNBucket FLUX_INFUSED_FLUID = addFluid("molten_flux_infused", "Molten Flux-Infused Metal", 1180, 12, 3000, 6000);
 
+	//ice and fire fluids
+	public static final FluidWithBlockNBucket DRAGONSTEEL_FIRE_FLUID = addFluid("molten_dragonsteel_fire", "Molten Fire Dragonsteel", 1770, 12, 3000, 6000);
+	public static final FluidWithBlockNBucket DRAGONSTEEL_ICE_FLUID = addFluid("molten_dragonsteel_ice", "Molten Ice Dragonsteel", 770, 12, 3000, 6000);
+	public static final FluidWithBlockNBucket DRAGONSTEEL_LIGHTNING_FLUID = addFluid("molten_dragonsteel_lightning", "Molten Lightning Dragonsteel", 1270, 12, 3000, 6000);
+	//TODO: Dragonsteel tool melthing?
 
 	/*
 	 * BLOCKS

@@ -11,6 +11,9 @@
     "#forge:molten_terrasteel",
     "#forge:molten_alfsteel",
     "#forge:molten_draconium",
-    "#forge:molten_draconium_awakened"
+    "#forge:molten_draconium_awakened",
+    "#forge:molten_dragonsteel_fire",
+    "#forge:molten_dragonsteel_ice",
+    "#forge:molten_dragonsteel_lightning"
   ]
 }

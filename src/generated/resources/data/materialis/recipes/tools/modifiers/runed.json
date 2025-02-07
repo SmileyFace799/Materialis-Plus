@@ -23,5 +23,6 @@
   "result": {
     "name": "materialis:runed",
     "value": "rune"
-  }
+  },
+  "variant_formatter": "tconstruct:default"
 }

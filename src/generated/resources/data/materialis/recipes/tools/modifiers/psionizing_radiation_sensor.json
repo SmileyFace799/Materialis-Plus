@@ -21,5 +21,6 @@
   "result": {
     "name": "materialis:psionizing_radiation_sensor",
     "value": "sensor"
-  }
+  },
+  "variant_formatter": "tconstruct:default"
 }

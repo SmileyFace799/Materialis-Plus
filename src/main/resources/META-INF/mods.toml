@@ -6,13 +6,14 @@ issueTrackerURL="https://github.com/RCXcrafter/Materialis/issues"
 [[mods]]
 modId="materialis"
 version="${file.jarVersion}"
-displayName="Materialis"
+displayName="Materialis Plus"
 #updateJSONURL="https://change.me.example.invalid/updates.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/materialis"
 logoFile="materialis_logo.png"
 #credits=""
 authors="RCXcrafter"
 description='''
+Materialis Plus is an extension of Materialis, adding support for even more materials.
 Materialis is an addon for Tinkers Construct, it adds compatility for other mods.
 
 It mostly adds new tool materials but other compatibility features are added as well.

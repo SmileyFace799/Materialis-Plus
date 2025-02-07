@@ -12,13 +12,19 @@ import net.minecraftforge.common.crafting.conditions.ModLoadedCondition;
 import net.minecraftforge.common.crafting.conditions.NotCondition;
 import net.minecraftforge.common.crafting.conditions.OrCondition;
 import net.minecraftforge.common.crafting.conditions.TagEmptyCondition;
+import slimeknights.tconstruct.common.TinkerTags;
 import slimeknights.tconstruct.common.json.ConfigEnabledCondition;
 import slimeknights.tconstruct.library.data.material.AbstractMaterialDataProvider;
 import slimeknights.tconstruct.library.data.material.AbstractMaterialStatsDataProvider;
 import slimeknights.tconstruct.library.data.material.AbstractMaterialTraitDataProvider;
 import slimeknights.tconstruct.library.materials.definition.MaterialId;
+import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
+import slimeknights.tconstruct.library.modifiers.ModifierId;
+import slimeknights.tconstruct.library.modifiers.util.LazyModifier;
 import slimeknights.tconstruct.tools.TinkerModifiers;
+import slimeknights.tconstruct.tools.data.ModifierIds;
+import slimeknights.tconstruct.tools.data.material.MaterialIds;
 import slimeknights.tconstruct.tools.stats.BowstringMaterialStats;
 import slimeknights.tconstruct.tools.stats.ExtraMaterialStats;
 import slimeknights.tconstruct.tools.stats.GripMaterialStats;
@@ -96,12 +102,16 @@ public class MaterialisMaterials extends AbstractMaterialDataProvider {
 	//redstone arsenal materials
 	public static final MaterialId fluxInfused = createMaterial("flux_infused");
 
+	//ice and fire
+	public static final MaterialId dragonsteelFire = createMaterial("dragonsteel_fire");
+	public static final MaterialId dragonsteelIce = createMaterial("dragonsteel_ice");
+	public static final MaterialId dragonsteelLightning = createMaterial("dragonsteel_lightning");
+
 	//avaritia materials
 	public static final MaterialId crystalMatrix = createMaterial("crystal_matrix");
 	public static final MaterialId neutronium = createMaterial("neutronium");
 	public static final MaterialId infinity = createMaterial("infinity");
 	public static final MaterialId infinityEmbellishment = createMaterial("infinity_embellishment");
-
 	public MaterialisMaterials(DataGenerator gen) {
 		super(gen);
 	}
@@ -165,6 +175,10 @@ public class MaterialisMaterials extends AbstractMaterialDataProvider {
 		addCompatMetalMaterial(awakenedDraconium, 4, ORDER_GENERAL + ORDER_COMPAT);
 		//redstone arsenal materials
 		addCompatMetalMaterial(fluxInfused, 3, ORDER_GENERAL + ORDER_COMPAT);
+		//ice and fire materials
+		addCompatMetalMaterial(dragonsteelFire, 4, ORDER_GENERAL + ORDER_COMPAT);
+		addCompatMetalMaterial(dragonsteelIce, 4, ORDER_GENERAL + ORDER_COMPAT);
+		addCompatMetalMaterial(dragonsteelLightning, 4, ORDER_GENERAL + ORDER_COMPAT);
 		//avaritia materials
 		addMaterial(crystalMatrix, 4, ORDER_GENERAL + ORDER_BINDING, true, false, new OrCondition(ConfigEnabledCondition.FORCE_INTEGRATION_MATERIALS, new NotCondition(new TagEmptyCondition("forge:ingots/crystal_matrix"))));
 		addMaterial(neutronium, 4, ORDER_WEAPON + ORDER_COMPAT, true, false, new OrCondition(ConfigEnabledCondition.FORCE_INTEGRATION_MATERIALS, new NotCondition(new TagEmptyCondition("forge:ingots/neutronium"))));
@@ -249,6 +263,10 @@ public class MaterialisMaterials extends AbstractMaterialDataProvider {
 			addDefaultTraits(fluxInfused, MaterialisModifiers.fluxripperModifier, MaterialisModifiers.fluxburnerModifier);
 			addTraits(fluxInfused, LimbMaterialStats.ID, MaterialisModifiers.fluxripperModifier, MaterialisModifiers.fluxdrawModifier);
 			addTraits(fluxInfused, GripMaterialStats.ID, MaterialisModifiers.fluxripperModifier, MaterialisModifiers.fluxdrawModifier);
+			//ice and fire materials
+			addDefaultTraits(dragonsteelFire, TinkerModifiers.fiery, MaterialisModifiers.refuelingModifier);
+			addDefaultTraits(dragonsteelIce, TinkerModifiers.freezing, new ModifierEntry(ModifierIds.pierce, 1).getLazyModifier());
+			addDefaultTraits(dragonsteelLightning, new ModifierEntry(ModifierIds.lightweight, 2));
 			//avaritia materials
 			addDefaultTraits(crystalMatrix, MaterialisModifiers.crystallineModifier);
 			addDefaultTraits(neutronium, MaterialisModifiers.supermassiveModifier);
@@ -322,6 +340,10 @@ public class MaterialisMaterials extends AbstractMaterialDataProvider {
 			addMaterialStats(awakenedDraconium, new HeadMaterialStats(1500, 9f, Tiers.NETHERITE, 3f), new HandleMaterialStats(1f, 1f, 1.1f, 1f), ExtraMaterialStats.DEFAULT, new LimbMaterialStats(1500, -0.1f, 0.2f, -0.1f), new GripMaterialStats(1.0f, -0.1f, 3f));
 			//redstone arsenal materials
 			addMaterialStats(fluxInfused, new HeadMaterialStats(400, 6f, Tiers.NETHERITE, 2.5f), new HandleMaterialStats(1f, 0.7f, 1.1f, 0.7f), ExtraMaterialStats.DEFAULT, new LimbMaterialStats(400, -0.15f, 0.1f, 0.05f), new GripMaterialStats(1.0f, 0.05f, 2.5f));
+			//ice and fire materials
+			addMaterialStats(dragonsteelFire, new HeadMaterialStats(1400, 5f, Tiers.NETHERITE, 4f), new HandleMaterialStats(0.9f, 0.7f, 1.2f, 1.3f), ExtraMaterialStats.DEFAULT);
+			addMaterialStats(dragonsteelIce, new HeadMaterialStats(1100, 6f, Tiers.NETHERITE, 3f), new HandleMaterialStats(0.9f, 0.9f, 1f, 1.1f), ExtraMaterialStats.DEFAULT);
+			addMaterialStats(dragonsteelLightning, new HeadMaterialStats(1800, 7f, Tiers.NETHERITE, 2f), new HandleMaterialStats(0.8f, 1.3f, 1.2f, 1.0f), ExtraMaterialStats.DEFAULT);
 			//avaritia materials
 			addMaterialStats(crystalMatrix, ExtraMaterialStats.DEFAULT);
 			addMaterialStats(neutronium, new HeadMaterialStats(100, 7f, Tiers.NETHERITE, 2.75f), new HandleMaterialStats(1.2f, 1f, 0.7f, 1.2f), ExtraMaterialStats.DEFAULT, new LimbMaterialStats(100, -0.4f, 0.25f, -0.1f), new GripMaterialStats(1.2f, -0.1f, 2.75f));

@@ -58,6 +58,7 @@ import slimeknights.tconstruct.library.json.TagDifferencePresentCondition;
 import slimeknights.tconstruct.library.json.TagIntersectionPresentCondition;
 import slimeknights.tconstruct.library.materials.definition.MaterialId;
 import slimeknights.tconstruct.library.materials.definition.MaterialVariantId;
+import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.recipe.FluidValues;
 import slimeknights.tconstruct.library.recipe.alloying.AlloyRecipeBuilder;
 import slimeknights.tconstruct.library.recipe.casting.ItemCastingRecipeBuilder;
@@ -453,6 +454,13 @@ public class MaterialisRecipes extends RecipeProvider implements IConditionBuild
 		metalTagCasting(consumer, MaterialisResources.FLUX_INFUSED_FLUID.OBJECT, "flux_infused", castingFolder, false);
 		metalMelting(consumer, MaterialisResources.FLUX_INFUSED_FLUID.FLUID.get(), "flux_infused", false, meltingFolder, true);
 
+		//ice and fire stuff
+		metalTagCasting(consumer, MaterialisResources.DRAGONSTEEL_FIRE_FLUID.OBJECT, "dragonsteel_fire", castingFolder, false);
+		metalMelting(consumer, MaterialisResources.DRAGONSTEEL_FIRE_FLUID.FLUID.get(), "dragonsteel_fire", false, meltingFolder, true);
+		metalTagCasting(consumer, MaterialisResources.DRAGONSTEEL_ICE_FLUID.OBJECT, "dragonsteel_ice", castingFolder, false);
+		metalMelting(consumer, MaterialisResources.DRAGONSTEEL_ICE_FLUID.FLUID.get(), "dragonsteel_ice", false, meltingFolder, true);
+		metalTagCasting(consumer, MaterialisResources.DRAGONSTEEL_LIGHTNING_FLUID.OBJECT, "dragonsteel_lightning", castingFolder, false);
+		metalMelting(consumer, MaterialisResources.DRAGONSTEEL_LIGHTNING_FLUID.FLUID.get(), "dragonsteel_lightning", false, meltingFolder, true);
 
 		//materials
 		metalMaterialRecipe(consumer, MaterialisMaterials.fairy, materialFolder, "fairy", false);
@@ -494,6 +502,9 @@ public class MaterialisRecipes extends RecipeProvider implements IConditionBuild
 		metalMaterialRecipe(consumer, MaterialisMaterials.draconium, materialFolder, "draconium", true);
 		metalMaterialRecipe(consumer, MaterialisMaterials.awakenedDraconium, materialFolder, "draconium_awakened", true);
 		metalMaterialRecipe(consumer, MaterialisMaterials.fluxInfused, materialFolder, "flux_infused", true);
+		metalMaterialRecipe(consumer, MaterialisMaterials.dragonsteelFire, materialFolder, "dragonsteel_fire", true);
+		metalMaterialRecipe(consumer, MaterialisMaterials.dragonsteelIce, materialFolder, "dragonsteel_ice", true);
+		metalMaterialRecipe(consumer, MaterialisMaterials.dragonsteelLightning, materialFolder, "dragonsteel_lightning", true);
 		metalMaterialRecipe(consumer, MaterialisMaterials.crystalMatrix, materialFolder, "crystal_matrix", true);
 		metalMaterialRecipe(consumer, MaterialisMaterials.neutronium, materialFolder, "neutronium", true);
 		//metalMaterialRecipe(consumer, MaterialisMaterials.infinity, materialFolder, "infinity", true);
@@ -535,6 +546,9 @@ public class MaterialisRecipes extends RecipeProvider implements IConditionBuild
 		materialMeltingCasting(consumer, MaterialisMaterials.draconium, MaterialisResources.DRACONIUM_FLUID.OBJECT, materialFolder);
 		materialMeltingCasting(consumer, MaterialisMaterials.awakenedDraconium, MaterialisResources.AWAKENED_DRACONIUM_FLUID.OBJECT, materialFolder);
 		materialMeltingCasting(consumer, MaterialisMaterials.fluxInfused, MaterialisResources.FLUX_INFUSED_FLUID.OBJECT, materialFolder);
+		materialMeltingCasting(consumer, MaterialisMaterials.dragonsteelFire, MaterialisResources.DRAGONSTEEL_FIRE_FLUID.OBJECT, materialFolder);
+		materialMeltingCasting(consumer, MaterialisMaterials.dragonsteelIce, MaterialisResources.DRAGONSTEEL_ICE_FLUID.OBJECT, materialFolder);
+		materialMeltingCasting(consumer, MaterialisMaterials.dragonsteelLightning, MaterialisResources.DRAGONSTEEL_LIGHTNING_FLUID.OBJECT, materialFolder);
 
 
 
@@ -788,6 +802,13 @@ public class MaterialisRecipes extends RecipeProvider implements IConditionBuild
 		.saveSalvage(consumer, prefix(MaterialisModifiers.cataclysmicModifier.getId(), salvageFolder))
 		.save(withCondition(consumer, new ModLoadedCondition("avaritia")), prefix(MaterialisModifiers.cataclysmicModifier.getId(), modifierFolder));
 
+		ModifierRecipeBuilder.modifier(new ModifierEntry(MaterialisModifiers.inertiaModifier, 2))
+				.setTools(TinkerTags.Items.MELEE)
+				.addInput(SizedIngredient.of(ItemNameIngredient.from(new ResourceLocation("fossil", "scarab_gem"))))
+				.setMaxLevel(2)
+				.saveSalvage(consumer, wrap(MaterialisModifiers.inertiaModifier.getId(), salvageFolder, "_level_2"))
+				.save(withCondition(consumer, new ModLoadedCondition("fossil")), prefix(MaterialisModifiers.inertiaModifier.getId(), modifierFolder));
+
 		ModifierRecipeBuilder.modifier(MaterialisModifiers.skullfireModifire)
 		.setTools(TinkerTags.Items.MELEE)
 		.addInput(Tags.Items.RODS_BLAZE)
@@ -842,6 +863,9 @@ public class MaterialisRecipes extends RecipeProvider implements IConditionBuild
 		plateTexture(consumer, MaterialisMaterials.draconium, true, slotlessFolder);
 		plateTexture(consumer, MaterialisMaterials.awakenedDraconium, true, slotlessFolder);
 		plateTexture(consumer, MaterialisMaterials.fluxInfused, true, slotlessFolder);
+		plateTexture(consumer, MaterialisMaterials.dragonsteelFire, true, slotlessFolder);
+		plateTexture(consumer, MaterialisMaterials.dragonsteelIce, true, slotlessFolder);
+		plateTexture(consumer, MaterialisMaterials.dragonsteelLightning, true, slotlessFolder);
 		plateTexture(consumer, MaterialisMaterials.crystalMatrix, true, slotlessFolder);
 		plateTexture(consumer, MaterialisMaterials.neutronium, true, slotlessFolder);
 		plateTexture(consumer, MaterialisMaterials.infinityEmbellishment, "ingots/infinity", true, slotlessFolder);

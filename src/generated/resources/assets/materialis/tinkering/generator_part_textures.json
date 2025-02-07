@@ -58,7 +58,7 @@
       "statType": "tconstruct:head"
     },
     {
-      "path": "materialis:item/tool/battlewrench/broken_front",
+      "path": "materialis:item/tool/battlewrench/broken_head",
       "statType": "tconstruct:head"
     },
     {
@@ -66,7 +66,7 @@
       "statType": "tconstruct:head"
     },
     {
-      "path": "materialis:item/tool/battlewrench/broken_head",
+      "path": "materialis:item/tool/battlewrench/broken_back",
       "statType": "tconstruct:head"
     },
     {
@@ -74,7 +74,7 @@
       "statType": "tconstruct:head"
     },
     {
-      "path": "materialis:item/tool/battlewrench/broken_back",
+      "path": "materialis:item/tool/battlewrench/broken_front",
       "statType": "tconstruct:head"
     },
     {
@@ -82,7 +82,7 @@
       "statType": "tconstruct:head"
     },
     {
-      "path": "materialis:item/tool/battlewrench/large/broken_front",
+      "path": "materialis:item/tool/battlewrench/large/broken_head",
       "statType": "tconstruct:head"
     },
     {
@@ -90,7 +90,7 @@
       "statType": "tconstruct:head"
     },
     {
-      "path": "materialis:item/tool/battlewrench/large/broken_head",
+      "path": "materialis:item/tool/battlewrench/large/broken_back",
       "statType": "tconstruct:head"
     },
     {
@@ -98,7 +98,7 @@
       "statType": "tconstruct:head"
     },
     {
-      "path": "materialis:item/tool/battlewrench/large/broken_back",
+      "path": "materialis:item/tool/battlewrench/large/broken_front",
       "statType": "tconstruct:head"
     }
   ]

@@ -36,31 +36,34 @@ public class MaterialisFluidTags extends FluidTagsProvider {
 		tag(LIQUID_STARLIGHT).addOptional(new ResourceLocation("astralsorcery", "liquid_starlight"));
 
 		tag(TinkerTags.Fluids.CHEAP_METAL_SPILLING)
-		.addTag(MaterialisResources.ORICHALCUM_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.CLOGGRUM_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.FROSTSTEEL_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.UTHERIUM_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.REGALIUM_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.IESNIUM_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.MANASTEEL_FLUID.OBJECT.getForgeTag());
+				.addTag(MaterialisResources.ORICHALCUM_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.CLOGGRUM_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.FROSTSTEEL_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.UTHERIUM_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.REGALIUM_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.IESNIUM_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.MANASTEEL_FLUID.OBJECT.getForgeTag());
 		tag(TinkerTags.Fluids.AVERAGE_METAL_SPILLING)
-		.addTag(MaterialisResources.ARCANE_GOLD_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.STARMETAL_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.PINK_SLIME_FLUID.OBJECT.getForgeTag())
-		//.addTag(MaterialisResources.REFINED_OBSIDIAN_FLUID.OBJECT.getForgeTag())
-		//.addTag(MaterialisResources.REFINED_GLOWSTONE_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.PSIMETAL_FLUID.OBJECT.getForgeTag());
+				.addTag(MaterialisResources.ARCANE_GOLD_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.STARMETAL_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.PINK_SLIME_FLUID.OBJECT.getForgeTag())
+				//.addTag(MaterialisResources.REFINED_OBSIDIAN_FLUID.OBJECT.getForgeTag())
+				//.addTag(MaterialisResources.REFINED_GLOWSTONE_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.PSIMETAL_FLUID.OBJECT.getForgeTag());
 		tag(TinkerTags.Fluids.EXPENSIVE_METAL_SPILLING)
-		.addTag(MaterialisResources.REFINED_RADIANCE_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.SHADOW_STEEL_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.NEPTUNIUM_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.FORGOTTEN_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.EBONY_PSIMETAL_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.IVORY_PSIMETAL_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.ELEMENTIUM_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.TERRASTEEL_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.ALFSTEEL_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.DRACONIUM_FLUID.OBJECT.getForgeTag())
-		.addTag(MaterialisResources.AWAKENED_DRACONIUM_FLUID.OBJECT.getForgeTag());
+				.addTag(MaterialisResources.REFINED_RADIANCE_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.SHADOW_STEEL_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.NEPTUNIUM_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.FORGOTTEN_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.EBONY_PSIMETAL_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.IVORY_PSIMETAL_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.ELEMENTIUM_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.TERRASTEEL_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.ALFSTEEL_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.DRACONIUM_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.AWAKENED_DRACONIUM_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.DRAGONSTEEL_FIRE_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.DRAGONSTEEL_ICE_FLUID.OBJECT.getForgeTag())
+				.addTag(MaterialisResources.DRAGONSTEEL_LIGHTNING_FLUID.OBJECT.getForgeTag());
 	}
 }

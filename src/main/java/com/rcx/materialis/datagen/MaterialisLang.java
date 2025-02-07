@@ -151,6 +151,11 @@ public class MaterialisLang extends LanguageProvider {
 		//redstone arsenal stuff
 		addMaterial(MaterialisMaterials.fluxInfused, "Flux-Infused", "", "Increases mining speed with 2.5 and attack damage with 1.5 per level, costs 100 RF per level");
 
+		//ice and fire stuff
+		addMaterial(MaterialisMaterials.dragonsteelFire, "Fire Dragonsteel", "", "Puts enemies on fire, extending their fire duration for each hit");
+		addMaterial(MaterialisMaterials.dragonsteelIce, "Ice Dragonsteel", "", "Freezes enemies when hit, and cuts through armor");
+		addMaterial(MaterialisMaterials.dragonsteelLightning, "Lightning Dragonsteel", "", "Makes your tool nimble, especially when used as the tool's head");
+
 		//avaritia stuff
 		addMaterial(MaterialisMaterials.crystalMatrix, "Crystal Matrix", "", "Adds 50% mining speed and attack damage per level");
 		addMaterial(MaterialisMaterials.neutronium, "Neutronium", "", "Adds 150% knockback per level");

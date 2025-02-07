@@ -180,6 +180,20 @@ public class MaterialisMaterialTextures extends AbstractMaterialSpriteProvider {
 		.meleeHarvest().ranged().statType(TinkerPartSpriteProvider.PLATE)
 		.fallbacks("metal")
 		.colorMapper(GreyToColorMapping.builderFromBlack().addARGB(63, 0xFF781B12).addARGB(102, 0xFFB55B20).addARGB(140, 0xFFD98931).addARGB(178, 0xFFEFB544).addARGB(216, 0xFFF6D55F).addARGB(255, 0xFFFFF3B8).build());
+		//ice and fire materials
+		buildMaterial(MaterialisMaterials.dragonsteelFire)
+				.meleeHarvest().ranged().statType(TinkerPartSpriteProvider.PLATE)
+				.fallbacks("metal")
+				.colorMapper(GreyToColorMapping.builderFromBlack().addARGB(63, 0xFF4f312f).addARGB(102, 0xFF653d3b).addARGB(140, 0xFF774847).addARGB(178, 0xFF9c6264).addARGB(216, 0xFFb7797e).addARGB(255, 0xFFda97a3).build());
+		buildMaterial(MaterialisMaterials.dragonsteelIce)
+				.meleeHarvest().ranged().statType(TinkerPartSpriteProvider.PLATE)
+				.fallbacks("metal")
+				.colorMapper(GreyToColorMapping.builderFromBlack().addARGB(63, 0xFF50536f).addARGB(102, 0xFF666b8d).addARGB(140, 0xFF7a81a7).addARGB(178, 0xFFa5afda).addARGB(216, 0xFFc5d4ff).addARGB(255, 0xFFcbdcff).build());
+		buildMaterial(MaterialisMaterials.dragonsteelLightning)
+				.meleeHarvest().ranged().statType(TinkerPartSpriteProvider.PLATE)
+				.fallbacks("metal")
+				.colorMapper(GreyToColorMapping.builderFromBlack().addARGB(63, 0xFF41194f).addARGB(102, 0xFF501f65).addARGB(140, 0xFF5e2777).addARGB(178, 0xFF793c9c).addARGB(216, 0xFF8c4fb7).addARGB(255, 0xFFa36bda).build());
+
 		//avaritia materials
 		buildMaterial(MaterialisMaterials.crystalMatrix)
 		.statType(ExtraMaterialStats.ID).statType(TinkerPartSpriteProvider.PLATE)
