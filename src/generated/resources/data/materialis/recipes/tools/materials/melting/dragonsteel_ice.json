@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "materialis:dragonsteel_ice",
+  "temperature": 470,
+  "result": {
+    "fluid": "materialis:molten_dragonsteel_ice",
+    "amount": 90
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "name": "tconstruct:fiery",
+      "level": 1
+    },
+    {
+      "name": "materialis:refueling",
+      "level": 1
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "tconstruct:modifier_salvage",
+  "tools": {
+    "tag": "tconstruct:modifiable/melee"
+  },
+  "modifier": "materialis:inertia",
+  "min_level": 1
+}

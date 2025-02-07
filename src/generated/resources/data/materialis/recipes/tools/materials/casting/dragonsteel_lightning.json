@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "tag": "materialis:molten_dragonsteel_lightning",
+    "amount": 90
+  },
+  "temperature": 970,
+  "output": "materialis:dragonsteel_lightning"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "tconstruct:casting_table",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:nuggets/dragonsteel_ice",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "cast": {
+    "tag": "tconstruct:casts/single_use/nugget"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "forge:molten_dragonsteel_ice",
+    "amount": 10
+  },
+  "result": {
+    "tag": "forge:nuggets/dragonsteel_ice"
+  },
+  "cooling_time": 16
+}

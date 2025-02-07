@@ -1,0 +1,32 @@
+{
+  "type": "tconstruct:swappable_modifier",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:ingots/dragonsteel_ice",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "forge:ingots/dragonsteel_ice"
+    },
+    {
+      "tag": "forge:ingots/dragonsteel_ice"
+    },
+    {
+      "tag": "forge:ingots/dragonsteel_ice"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/embellishment/metal"
+  },
+  "allow_crystal": false,
+  "result": {
+    "name": "tconstruct:embellishment",
+    "value": "materialis:dragonsteel_ice"
+  },
+  "variant_formatter": "tconstruct:default"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/dragonsteel_fire",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/dragonsteel_fire"
+  },
+  "result": {
+    "fluid": "materialis:molten_dragonsteel_fire",
+    "amount": 810
+  },
+  "temperature": 1470,
+  "time": 238
+}

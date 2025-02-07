@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:wires/dragonsteel_lightning",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:wires/dragonsteel_lightning"
+  },
+  "result": {
+    "fluid": "materialis:molten_dragonsteel_lightning",
+    "amount": 45
+  },
+  "temperature": 970,
+  "time": 13
+}

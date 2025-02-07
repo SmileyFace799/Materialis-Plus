@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:item_part_builder",
+  "pattern": "materialis:wrench_head",
+  "pattern_item": {
+    "tag": "forge:sand/red"
+  },
+  "result": {
+    "item": "materialis:wrench_head_red_sand_cast",
+    "count": 4
+  }
+}

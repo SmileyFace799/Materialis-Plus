@@ -1,0 +1,23 @@
+{
+  "type": "tconstruct:modifier",
+  "conditions": [
+    {
+      "modid": "fossil",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "fossil:scarab_gem"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/melee"
+  },
+  "allow_crystal": true,
+  "result": {
+    "name": "materialis:inertia",
+    "level": 2
+  },
+  "max_level": 2
+}

@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "name": "tconstruct:freezing",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:pierce",
+      "level": 1
+    }
+  ]
+}

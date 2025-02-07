@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:nuggets/dragonsteel_ice",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/dragonsteel_ice"
+  },
+  "result": {
+    "fluid": "materialis:molten_dragonsteel_ice",
+    "amount": 10
+  },
+  "temperature": 470,
+  "time": 16
+}
